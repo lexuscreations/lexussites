@@ -84,7 +84,7 @@ export const sitesDataArrObj = [
     github: "lexuscreations",
   },
   {
-    img: "/worklokeshvishwakarma.png",
+    img: "/textcapital.png",
     hosted: "githubPages",
     siteName: "TextCapital",
     url: "https://worklokeshvishwakarma.github.io/textcapital/",

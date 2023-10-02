@@ -44,6 +44,7 @@ const Card = ({ img, hosted, siteName, url, github }) => {
             className="rounded-lg"
             src={img}
             effect="blur"
+            placeholderSrc={`/compressed${img}`}
           />
         )}
       </div>
