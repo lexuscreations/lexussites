@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { IoOpenOutline } from "react-icons/io5";
 import { MdOutlineOpenInBrowser } from "react-icons/md";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Card = ({ img, hosted, siteName, url, github }) => {
   const [isOpened, setIsOpened] = useState(false);
@@ -37,7 +39,12 @@ const Card = ({ img, hosted, siteName, url, github }) => {
             />
           </>
         ) : (
-          <img src={img} alt="siteImage h-full" className="rounded-lg" />
+          <LazyLoadImage
+            alt="siteImage"
+            className="rounded-lg"
+            src={img}
+            effect="blur"
+          />
         )}
       </div>
 
