@@ -5,8 +5,9 @@ const App = () => {
   return (
     <div className="h-screen bg-slate-100 flex justify-center flex-col overflow-auto">
       <div className="my-3 w-11/12 sm:w-5/6 mx-auto">
-        <h2 className="text-xl font-medium text-slate-500">
-          LexusSite's | {sitesDataArrObj.length}
+        <h2 className="text-xl font-medium text-slate-500 flex justify-between">
+          <span>LexusSite's</span>
+          <span>{sitesDataArrObj.length}</span>
         </h2>
       </div>
 
